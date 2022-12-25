@@ -1,1 +1,106 @@
 
+@import url("https://fonts.googleapis.com/css?family=Muli:300,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbfcfe;
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 1000px;
+    background-image: linear-gradient(45deg, rgba(26, 189, 26, 0.548), rgba(232, 138, 196, 0.678));
+    border: transparent;
+    box-shadow: #0f6aa7;
+}
+
+.otp-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+h2 {
+    text-shadow: 5px 5px 5px #772e2ecc;
+    color: white;
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+p {
+    color: white;
+}
+
+
+input:hover {
+    background-image: linear-gradient(-45deg, rgba(222, 225, 233, 0.548), rgba(232, 138, 196, 0.678));
+    color: rgb(75, 13, 133);
+    border: transparent;
+
+}
+
+
+.otp {
+    border-radius: 5px;
+    font-size: 75px;
+    height: 120px;
+    width: 100px;
+    margin: 1%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.otp::-webkit-outer-spin-button,
+.otp::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.info {
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 10px;
+    line-height: 20px;
+    max-width: 400px;
+    color: rgb(44, 36, 44);
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+input {
+    border: transparent;
+}
+
+@media(max-width: 768px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+    .otp-container {
+        flex-wrap: wrap;
+        margin: 50px 10px;
+    }
+
+    .otp { 
+        font-size: 40px;
+        height: 50px;
+        max-width: 50px;
+    }
+}
+
